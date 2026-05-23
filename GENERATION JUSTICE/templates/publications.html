@@ -1,0 +1,57 @@
+<section class="section page-intro">
+    <span class="eyebrow" data-i18n="pub.eyebrow">Articles, Magazine, and Books</span>
+    <h1 data-i18n="pub.title">Publish member work.</h1>
+    <p class="lead" data-i18n="pub.lead">Members and interns can submit articles for the monthly magazine, online books, and future British Legal Centre compilation books with author accreditation.</p>
+</section>
+
+<section class="section no-top split">
+    <div class="panel">
+        <h2 data-i18n="pub.submit">Submit an article</h2>
+        <form id="articleForm">
+            <label data-i18n-label="pub.articleTitle">
+                Article title
+                <input id="articleTitle" type="text" required>
+            </label>
+            <label data-i18n-label="pub.category">
+                Category
+                <select id="articleCategory">
+                    <option value="Rule of Law News" data-i18n="pub.cat.news">Rule of Law News</option>
+                    <option value="Legal Writing" data-i18n="pub.cat.writing">Legal Writing</option>
+                    <option value="Student Project" data-i18n="pub.cat.project">Student Project</option>
+                    <option value="Case Comment" data-i18n="pub.cat.case">Case Comment</option>
+                    <option value="Book Chapter Candidate" data-i18n="pub.cat.bookChapter">Book Chapter Candidate</option>
+                </select>
+            </label>
+            <label data-i18n-label="pub.abstract">
+                Abstract
+                <textarea id="articleAbstract" data-i18n-placeholder="pub.abstractPh" placeholder="Write a short abstract for editorial review." required></textarea>
+            </label>
+            <button class="button" type="submit" data-i18n="pub.submitBtn">Submit Article</button>
+            <div class="status" id="articleStatus"></div>
+        </form>
+    </div>
+    <div class="panel">
+        <h2 data-i18n="pub.yours">Your article submissions</h2>
+        <div id="articleSubmissionList">__USER_ARTICLES__</div>
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="section-head">
+        <span class="eyebrow" data-i18n="pub.magEyebrow">Monthly Magazine</span>
+        <h2 data-i18n="pub.magTitle">Rule of Law news and member articles.</h2>
+    </div>
+    <div class="resource-grid">
+        __MAGAZINES__
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="section-head">
+        <span class="eyebrow" data-i18n="pub.booksEyebrow">Books</span>
+        <h2 data-i18n="pub.booksTitle">Compilation books and legal texts.</h2>
+    </div>
+    <div class="resource-grid">
+        __BOOKS__
+    </div>
+</section>

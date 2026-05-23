@@ -1,0 +1,125 @@
+<section class="section page-intro">
+    <span class="eyebrow" data-i18n="membership.eyebrow">Membership Application</span>
+<h1 data-i18n="membership.title">Apply to become a member</h1>
+    <p class="lead" data-i18n="membership.lead">
+        Join Generation Justice – Rule of Law Foundation and become part of a global community committed to strengthening the Rule of Law.
+    </p>
+    <blockquote class="quote-block" data-i18n="membership.quote">“Injustice anywhere is a threat to justice everywhere.” – Martin Luther King Jr.</blockquote>
+    <p class="muted apply-links">
+        <span data-i18n="membership.ambassadorLink">Applying for the Ambassador programme?</span>
+        <a href="/membership/ambassador" data-i18n="membership.ambassadorOpen">Open the Ambassador application</a>
+    </p>
+</section>
+
+<section class="section no-top">
+    <div class="form-shell wide">
+        <div>
+            <span class="eyebrow" data-i18n="membership.formEyebrow">Member Acceptance Form</span>
+<h2 data-i18n="membership.tickTitle">Tick-box declarations (mandatory)</h2>
+<p data-i18n="membership.tickLead">Membership is conditional upon your agreement to comply with our Code of Conduct.</p>
+<div class="certificate-preview hidden" id="applicationCertificate">
+                <span class="eyebrow" data-i18n="membership.certReady">Certificate Ready</span>
+<h3 id="certificateNamePreview"></h3>
+                <p><span data-i18n="membership.regNo">Registration number:</span> <strong id="certificateNumberPreview"></strong></p>
+                <a class="button" href="/certificate" data-i18n="common.openCertificate">Open Certificate</a>
+</div>
+        </div>
+        <form id="applicationForm">
+            <fieldset class="checkbox-group">
+                <legend data-i18n="membership.declarations">Required declarations</legend>
+<label class="checkbox-row">
+                    <input type="checkbox" name="declare_coc" id="declareCoc" required>
+                    <span data-i18n-html="form.coc">I confirm that I have read and understood the <a href="/code-of-conduct" target="_blank" rel="noopener">Generation Justice Code of Conduct</a></span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_rule_of_law" required>
+                    <span data-i18n-html="form.ruleOfLaw">I agree to uphold the principles of the Rule of Law, including fairness, accountability, and equality before the law</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_respect" required>
+                    <span data-i18n-html="form.respect">I agree to communicate respectfully and professionally with all members of the community</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_harassment" required>
+                    <span data-i18n-html="form.harassment">I confirm that I will not engage in harassment, discrimination, or abusive behaviour of any kind</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_politics" required>
+                    <span data-i18n-html="form.politics">I agree not to use the platform for political campaigning, propaganda, or personal promotion unrelated to the project</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_honesty" required>
+                    <span data-i18n-html="form.honesty">I confirm that all contributions I make will be honest, original, and free from plagiarism</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_confidentiality" required>
+                    <span data-i18n-html="form.confidentiality">I agree to respect confidentiality where required</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_termination" required>
+                    <span data-i18n-html="form.termination">I understand that failure to comply with these rules may result in suspension or removal from the group</span>
+                </label>
+            </fieldset>
+
+            <div class="form-grid">
+                <label data-i18n-label="membership.fullName">
+                    Full name
+                    <input id="applyName" type="text" data-i18n-placeholder="membership.ph.name" placeholder="Full name" required>
+                </label>
+                <label data-i18n-label="membership.country">
+                    Country of residence
+                    <input id="applyCountry" type="text" data-i18n-placeholder="membership.ph.country" placeholder="Country" required>
+                </label>
+                <label data-i18n-label="membership.uni">
+                    University / Organisation (if applicable)
+                    <input id="applyOrganization" type="text" data-i18n-placeholder="membership.ph.uni" placeholder="University or organisation">
+                </label>
+                <label data-i18n-label="membership.email">
+                    Email address
+                    <input id="applyEmail" type="email" data-i18n-placeholder="membership.ph.email" placeholder="Email" required>
+                </label>
+                <label data-i18n-label="membership.phone">
+                    Phone
+                    <input id="applyPhone" type="text" data-i18n-placeholder="membership.ph.phone" placeholder="Phone" required>
+                </label>
+                <label data-i18n-label="membership.city">
+                    City
+                    <input id="applyCity" type="text" data-i18n-placeholder="membership.ph.city" placeholder="City">
+                </label>
+            </div>
+            <label data-i18n-label="membership.address">
+                Address
+                <input id="applyAddress" type="text" data-i18n-placeholder="membership.ph.address" placeholder="Street, building, apartment, postal code" required>
+            </label>
+            <label data-i18n-label="membership.password">
+                Password
+                <input id="applyPassword" type="password" minlength="4" data-i18n-placeholder="membership.ph.password" placeholder="At least 4 characters" required>
+            </label>
+            <label data-i18n-label="membership.level">
+                Membership level
+                <select id="applyMembership">
+                    <option value="Ambassador" selected>Level 1 - Ambassador</option>
+                    <option value="Active Ambassador">Level 2 - Active Ambassador</option>
+                    <option value="Senior Ambassador">Level 3 - Senior Ambassador</option>
+                    <option value="Country Lead">Level 4 - Country Lead</option>
+                </select>
+            </label>
+
+            <fieldset class="checkbox-group">
+                <legend data-i18n="membership.finalAck">Final acknowledgement</legend>
+<label class="checkbox-row">
+                    <input type="checkbox" name="declare_voluntary" required>
+                    <span data-i18n-html="form.voluntary">I understand that membership of Generation Justice is voluntary and may be terminated by the organisers at their discretion where the Code of Conduct is breached</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="declare_accurate" required>
+                    <span data-i18n-html="form.accurate">I confirm that the information provided above is accurate</span>
+                </label>
+            </fieldset>
+
+            <p class="form-tagline" data-i18n="membership.tagline">I join not just to learn the law – but to defend it.</p>
+            <button class="button" type="submit" data-i18n="membership.submit">Join Generation Justice</button>
+            <div class="status" id="applicationStatus"></div>
+        </form>
+    </div>
+</section>

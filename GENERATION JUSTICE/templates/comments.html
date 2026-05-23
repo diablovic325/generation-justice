@@ -1,0 +1,32 @@
+<section class="section split">
+    <div>
+        <span class="eyebrow" data-i18n="comments.eyebrow">Comments</span>
+        <h1 data-i18n="comments.title">Leave a message for the community.</h1>
+        <p class="lead" data-i18n="comments.lead">Members can share ideas, feedback, event notes, and questions for the team. Organizer-level accounts can remove comments that breach the Code of Conduct.</p>
+        <button class="button quiet" type="button" data-open-login data-i18n="comments.login">Log In as Member</button>
+    </div>
+    <div class="panel">
+        <form id="commentForm">
+            <label data-i18n-label="comments.name">
+                Your name
+                <input id="commentName" type="text" data-i18n-placeholder="comments.namePh" placeholder="Maya Johnson" value="__COMMENT_NAME__">
+            </label>
+            <label data-i18n-label="comments.text">
+                Your comment
+                <textarea id="commentText" data-i18n-placeholder="comments.textPh" placeholder="Write a thoughtful comment..." required></textarea>
+            </label>
+            <button class="button" type="submit" data-i18n="comments.post">Post Comment</button>
+            <div class="status" id="commentStatus"></div>
+        </form>
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="section-head">
+        <span class="eyebrow" data-i18n="comments.feed">Community Feed</span>
+        <h2 data-i18n="comments.recent">Recent comments.</h2>
+    </div>
+    <div class="comment-list" id="commentList">
+        __COMMENTS__
+    </div>
+</section>

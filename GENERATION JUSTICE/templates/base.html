@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>__TITLE__</title>
+    <link rel="stylesheet" href="/static/css/styles.css?v=20260519a">
+</head>
+<body>
+    <header class="topbar">
+        <div class="header-logo">
+            <a href="/" aria-label="Generation Justice home">
+                <img src="/static/images/gj-logo-horizontal.png" alt="Generation Justice logo">
+            </a>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+            <div class="links">
+                <a class="__ACTIVE_HOME__" href="/">Home</a>
+                <a class="__ACTIVE_ABOUT__" href="/about">Who We Are</a>
+                <a class="__ACTIVE_WORK__" href="/what-we-do">What We Do</a>
+                <a class="__ACTIVE_CONDUCT__" href="/code-of-conduct">Code</a>
+                <a class="__ACTIVE_MEMBERSHIP__" href="/membership">Apply</a>
+                <a class="__ACTIVE_CERTIFICATES__" href="/certificates">Certificates</a>
+                <a class="__ACTIVE_HUB__" href="/hub">Hub</a>
+                <a class="__ACTIVE_DISCUSSIONS__" href="/discussions">Discussions</a>
+                <a class="__ACTIVE_COMPETITIONS__" href="/competitions">Competitions</a>
+                <a class="__ACTIVE_LESSONS__" href="/lessons">Lessons</a>
+                <a class="__ACTIVE_INTERNSHIPS__" href="/internships">Internships</a>
+                <a class="__ACTIVE_COURSES__" href="/courses">Courses</a>
+                <a class="__ACTIVE_PUBLICATIONS__" href="/publications">Publications</a>
+                <a class="__ACTIVE_PANELS__" href="/panels">Panels</a>
+                <button class="text-button __LOGIN_HIDDEN__" id="openLoginButton" type="button" data-login-mode="member">Member Login</button>
+                <button class="text-button __LOGIN_HIDDEN__" id="openOrganizerLoginButton" type="button" data-login-mode="organizer">Organizer Login</button>
+                <button class="text-button __LOGIN_HIDDEN__" id="openAdminLoginButton" type="button" data-login-mode="admin">Admin Login</button>
+                <button class="text-button __LOGOUT_HIDDEN__" id="logoutButton" type="button">Log Out</button>
+                <span class="__MEMBER_CHIP_CLASS__" id="memberChip">__MEMBER_CHIP_TEXT__</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        __CONTENT__
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <strong>Generation Justice</strong>
+            <span>Member applications, certificates, courses, publications, internships, and Rule of Law panels.</span>
+        </div>
+    </footer>
+
+    <div class="modal" id="loginModal" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-head">
+                <div>
+                    <h2 id="loginTitle">Member Login</h2>
+                    <p id="loginHelp">Use a demo account or apply for membership.</p>
+                </div>
+                <button class="close" id="closeLoginButton" type="button" aria-label="Close login">x</button>
+            </div>
+            <form id="loginForm">
+                <label>
+                    Email
+                    <input id="loginEmail" type="email" value="demo@generationjustice.org" required>
+                </label>
+                <label>
+                    Password
+                    <input id="loginPassword" type="password" value="demo123" required>
+                </label>
+                <p class="muted" id="loginDemoHint">
+                    Member demo: demo@generationjustice.org / demo123
+                </p>
+                <button class="button" type="submit">Log In</button>
+                <a class="button secondary" href="/membership">Apply Instead</a>
+            </form>
+            <div class="status" id="loginStatus"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js?v=20260519a"></script>
+</body>
+</html>
+
+
