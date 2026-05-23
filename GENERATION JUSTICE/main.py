@@ -39,8 +39,8 @@ app = FastAPI(
 )
 
 @app.get("/")
-def home():
-    return {"status": "OK", "message": "Generation Justice is running 🚀"}
+def home(request: Request):
+    return render_page(request, "index.html", "home", "Generation Justice | Home")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
 
