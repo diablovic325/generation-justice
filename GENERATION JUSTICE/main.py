@@ -38,6 +38,7 @@ app = FastAPI(
     version="3.0.0",
 )
 
+
 @app.get("/")
 def home(request: Request):
     return render_page(request, "index.html", "home", "Generation Justice | Home")
